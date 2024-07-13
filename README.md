@@ -126,5 +126,15 @@ For and errors I would use [Sentry](https://docs.sentry.io/platforms/python/inte
 
 You can setup dashboards for anything and every server database reads and write etc
 
+
+# Throttling
+
+Added basic throthling with the following settings
+
+> 'DEFAULT_THROTTLE_RATES': {
+>     'burst': '60/min',
+>     'sustained': '1000/day'
+> },
+
 ---
 ---
