@@ -26,8 +26,7 @@ checkout the repository at : [VALUATION-ROLL-GV-2022](https://github.com/JBeggs/
 
 cd insto the folder and run 
 
-`cd VALUATION-ROLL-GV-2022`
-
+`cd VALUATION-ROLL-GV-2022`\
 `docker build .`
 
 then
@@ -47,8 +46,7 @@ To get into a bash window
 
 then run:
 
-`python manage.py migrate`
-
+`python manage.py migrate`\
 `python manage.py createsuperuser`
 
 To create the super user...
@@ -58,10 +56,8 @@ And that's it.
 # Urls for application
 ---
 
-[Django Admin](http://127.0.0.1:8000/admin/)
-
-[Swagger Docs](http://127.0.0.1:8000/swagger/)
-
+[Django Admin](http://127.0.0.1:8000/admin/)\
+[Swagger Docs](http://127.0.0.1:8000/swagger/)\
 [REST API](http://127.0.0.1:8000/)
 
 
@@ -74,14 +70,10 @@ Stop the docker containers
 
 ### Container names
 
-`valuation-roll-gv-2022-chrome-1`
-
-`valuation-roll-gv-2022-framework-1`
-
-`valuation-roll-gv-2022-cronjobs-1`
-
-`valuation-roll-gv-2022-db-1`
-
+`valuation-roll-gv-2022-chrome-1`\
+`valuation-roll-gv-2022-framework-1`\
+`valuation-roll-gv-2022-cronjobs-1`\
+`valuation-roll-gv-2022-db-1`\
 `valuation-roll-gv-2022-web-1`
 
 
@@ -94,14 +86,14 @@ I added a cronjob into the system that get's builtt with the application
 
 > 0 * * * * root python manage.py get_full_title_deeds_town 0 100 > /dev/stdout\
 > 20 * * * * root python manage.py get_full_title_suburb 0 100 > /dev/stdout\
-> 40 * * * * root python manage.py sectional_title_scheme 0 100 > /dev/stdout\
+> 40 * * * * root python manage.py sectional_title_scheme 0 100 > /dev/stdout
 
 
 That run every hour for three scripts
 
 `python manage.py get_full_title_deeds_town 0 100`\
 `python manage.py get_full_title_suburb 0 100`\
-`python manage.py sectional_title_scheme 0 100`\
+`python manage.py sectional_title_scheme 0 100`
 
 The scripts take two variables:
 
