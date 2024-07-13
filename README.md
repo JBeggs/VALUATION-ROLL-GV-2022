@@ -119,7 +119,9 @@ For hosting and service that can take a container
 or
 [Dockerize](https://dockerize.io/)
 
-# Alerts and errors I would use [Sentry](https://docs.sentry.io/platforms/python/integrations/django/)
+# Alerts 
+
+For and errors I would use [Sentry](https://docs.sentry.io/platforms/python/integrations/django/)
 ---
 
 You can setup dashboards for anything and every server database reads and write etc
