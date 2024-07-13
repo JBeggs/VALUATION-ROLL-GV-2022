@@ -45,6 +45,7 @@ To get into a bash window
 then run:
 
 `python manage.py migrate`
+
 `python manage.py createsuperuser`
 
 To create the super user...
