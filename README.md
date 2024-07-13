@@ -93,9 +93,7 @@ I added a cronjob into the system that get's builtt with the application
 
 
 > 0 * * * * root python manage.py get_full_title_deeds_town 0 100 > /dev/stdout
-
 > 20 * * * * root python manage.py get_full_title_suburb 0 100 > /dev/stdout
-
 > 40 * * * * root python manage.py sectional_title_scheme 0 100 > /dev/stdout
 
 
