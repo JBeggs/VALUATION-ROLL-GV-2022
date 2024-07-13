@@ -55,8 +55,11 @@ And that's it.
 # Urls for application
 
 [Django Admin](http://127.0.0.1:8000/admin/)
+
 [Swagger Docs](http://127.0.0.1:8000/swagger/)
+
 [REST API](http://127.0.0.1:8000/)
+
 
 # Useful docker and docker compose commands
 
