@@ -1,10 +1,6 @@
-# django-webcrawler
+# VALUATION ROLL GV 2022
 
-# H1 VALUATION ROLL GV 2022
-
-#h3
-
-built with :
+### built with :
 
 1. docker
 2. docker compose
@@ -20,7 +16,7 @@ built with :
 Before we can get started make sure you have [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/) installed
 
 
-# h3 Step 1
+### Step 1
 
 checkout the repository at : [VALUATION-ROLL-GV-2022](https://github.com/JBeggs/VALUATION-ROLL-GV-2022)
 
@@ -38,7 +34,7 @@ then
 
 But I think the mostly do the same thing
 
-# h3 Step 2
+### Step 2
 
 We need to migrate so use this command:
 
@@ -55,23 +51,22 @@ To create the super user...
 
 And that's it.
 
-# H3 Url for application
+# Urls for application
 
 [Django Admin](http://127.0.0.1:8000/admin/)
 [Swagger Docs](http://127.0.0.1:8000/swagger/)
 [REST API](http://127.0.0.1:8000/)
 
-# H3 Useful docker and docker compose commands
+# Useful docker and docker compose commands
 
 Stop the docker containers
 
 `docker compose down`
 
-# H3 Container names
+### Container names
 
-
-valuation-roll-gv-2022-chrome-1
-valuation-roll-gv-2022-framework-1
-valuation-roll-gv-2022-cronjobs-1
-valuation-roll-gv-2022-db-1
-valuation-roll-gv-2022-web-1
+`valuation-roll-gv-2022-chrome-1`
+`valuation-roll-gv-2022-framework-1`
+`valuation-roll-gv-2022-cronjobs-1`
+`valuation-roll-gv-2022-db-1`
+`valuation-roll-gv-2022-web-1`
