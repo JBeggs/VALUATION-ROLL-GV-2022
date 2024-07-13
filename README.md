@@ -1,7 +1,7 @@
 # VALUATION ROLL GV 2022 (STOPPED WORKING)
 ---
 
-## Using 2017 url instad.
+## Using 2017 url instead.
 
 Still working
 
