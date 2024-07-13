@@ -76,7 +76,7 @@ Stop the docker containers
 `valuation-roll-gv-2022-web-1`
 
 
-# Strategy for webcrawler
+# Strategy for webcrawler (NOT WORKING, hopefully by deadline)
 
 I added a cronjob into the system that get's builtt with the application
 
