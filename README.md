@@ -74,3 +74,28 @@ Stop the docker containers
 `valuation-roll-gv-2022-cronjobs-1`
 `valuation-roll-gv-2022-db-1`
 `valuation-roll-gv-2022-web-1`
+
+
+# Strategy for webcrawler
+
+I added a cronjob into the system that get's builtt with the application
+
+
+0 * * * * root python manage.py get_full_title_deeds_town 0 100 > /dev/stdout
+20 * * * * root python manage.py get_full_title_suburb 0 100 > /dev/stdout
+40 * * * * root python manage.py sectional_title_scheme 0 100 > /dev/stdout
+
+That run every hour for three scripts
+
+`python manage.py get_full_title_deeds_town 0 100`
+`python manage.py get_full_title_suburb 0 100`
+`python manage.py sectional_title_scheme 0 100`
+
+The scripts take two variables:
+
+1. timeout for the requests, if they fail start with 1 and work up
+2. the amount of suburbs, deeds towns or schemes to get at a time
+
+With this rate 2400 x 3 (suburbs, deeds towns or schemes) will be collected in the first day
+
+There is a basic que so that if anything happen's nothing happens...
