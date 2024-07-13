@@ -11,7 +11,7 @@
 7. beautifulsoup4 (webcrawler)
 
 
-# h3 Installation
+# Installation
 
 Before we can get started make sure you have [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/) installed
 
