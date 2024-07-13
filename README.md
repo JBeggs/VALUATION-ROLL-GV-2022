@@ -1,8 +1,8 @@
 # django-webcrawler
 
-#H1 VALUATION ROLL GV 2022
+# H1 VALUATION ROLL GV 2022
 
-#h3
+# h3
 
 built with :
 
@@ -15,20 +15,57 @@ built with :
 7. beautifulsoup4 (webcrawler)
 
 
-#h3 Installation
+# h3 Installation
 
 Before we can get started make sure you have [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/) installed
 
 checkout the repository at : [test](link)
 
+`git clone https://github.com/JBeggs/VALUATION-ROLL-GV-2022.git`
+
 cd insto the folder and run 
 
-docker build .
-docker compose up -d --build
+`cd VALUATION-ROLL-GV-2022`
+`docker build .`
+
+then
+
+`docker compose up -d --build`
+
+But I think the mostly do the same thing
+
+We need to migrate so use this command:
+
+`docker exec -it valuation-roll-gv-2022-web-1 bash`
+
+To get into a bash window
+
+then run:
+
+`python manage.py migrate`
+`python manage.py createsuperuser`
+
+To create the super user...
+
+And that's it.
+
+# H3 Url for the admin panel
+
+[Django Admin](http://127.0.0.1:8000/admin/)
+[Swagger Docs](http://127.0.0.1:8000/swagger/)
+[REST API](http://127.0.0.1:8000/)
+
+# H3 Useful docker and docker compose commands
+
+
 docker compose down
 
 
+# H3 Container names
 
---platform="linux/amd64" 
 
-docker run --platform="linux/amd64"  -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest
+valuation-roll-gv-2022-chrome-1
+valuation-roll-gv-2022-framework-1
+valuation-roll-gv-2022-cronjobs-1
+valuation-roll-gv-2022-db-1
+valuation-roll-gv-2022-web-1
