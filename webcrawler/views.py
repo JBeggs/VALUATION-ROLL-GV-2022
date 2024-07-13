@@ -24,6 +24,7 @@ class ValuationRollViewSet(GenericViewSet,  # generic view functionality
     
     
     """
+    scope = 'burst'
     serializer_class = ValuationRollSerializer
     queryset = ValuationRoll.objects.all()
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]

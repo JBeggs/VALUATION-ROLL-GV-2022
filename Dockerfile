@@ -16,12 +16,9 @@ RUN crontab /etc/cron.d/crontab
 
 ADD crontab.txt /etc/cron.d/crontab
 RUN chmod 0644 /etc/cron.d/crontab
+RUN chown www-data: /var/log/cron.log
 
 RUN service cron start
-
-RUN touch /var/log/cron.log
-
-CMD cron && tail -f /var/log/cron.log
 
 # Install dependencies
 COPY ./requirements.txt .
@@ -32,4 +29,4 @@ RUN pip install -r requirements.txt
 #copy local files
 COPY . . 
 
-CMD ["cron", "-f"]
+CMD ["cron", "-f", "tail -f /var/log/cron.log"]
