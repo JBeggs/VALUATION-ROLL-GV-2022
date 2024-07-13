@@ -19,7 +19,10 @@ built with :
 
 Before we can get started make sure you have [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/) installed
 
-checkout the repository at : [test](link)
+
+# h3 Step 1
+
+checkout the repository at : [VALUATION-ROLL-GV-2022](https://github.com/JBeggs/VALUATION-ROLL-GV-2022)
 
 `git clone https://github.com/JBeggs/VALUATION-ROLL-GV-2022.git`
 
@@ -32,7 +35,10 @@ then
 
 `docker compose up -d --build`
 
+
 But I think the mostly do the same thing
+
+# h3 Step 2
 
 We need to migrate so use this command:
 
@@ -49,7 +55,7 @@ To create the super user...
 
 And that's it.
 
-# H3 Url for the admin panel
+# H3 Url for application
 
 [Django Admin](http://127.0.0.1:8000/admin/)
 [Swagger Docs](http://127.0.0.1:8000/swagger/)
@@ -57,9 +63,9 @@ And that's it.
 
 # H3 Useful docker and docker compose commands
 
+Stop the docker containers
 
-docker compose down
-
+`docker compose down`
 
 # H3 Container names
 
