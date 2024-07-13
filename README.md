@@ -1,6 +1,9 @@
-# VALUATION ROLL GV 2022
+# VALUATION ROLL GV 2022 (STOPPED WORKING)
 ---
 
+## Using 2017 url instad.
+
+Still working
 
 ## OpenAPI schema
 
@@ -132,7 +135,6 @@ You can setup dashboards for anything and every server database reads and write 
 Added basic throthling with the following settings
 
 > 'DEFAULT_THROTTLE_RATES': {\
->     'burst': '60/min',\
 >     'sustained': '1000/day'\
 > },
 
