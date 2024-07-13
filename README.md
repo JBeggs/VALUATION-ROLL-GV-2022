@@ -115,7 +115,7 @@ There is a basic que so that if anything happen's nothing happens...
 # Hosting
 ---
 
-For hosting and service that can take a container
+For hosting any service that can take a container.
 
 [AWS](https://aws.amazon.com/free/containers/)
 [Digital Ocean](https://www.digitalocean.com/solutions/docker-hosting)
