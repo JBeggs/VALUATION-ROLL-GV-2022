@@ -86,7 +86,7 @@ Stop the docker containers
 
 
 
-# Strategy for webcrawler (NOT WORKING, hopefully by deadline)
+# Strategy for webcrawler (NOT WORKING ;( )
 ---
 
 I added a cronjob into the system that get's builtt with the application
