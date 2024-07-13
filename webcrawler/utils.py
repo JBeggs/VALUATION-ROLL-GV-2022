@@ -4,7 +4,8 @@ from selenium.webdriver.remote.remote_connection import RemoteConnection
 from webcrawler.models import RollQue, ValuationRoll
 
 # URL of the website to scrape
-URL = "https://valuation2022.durban.gov.za/"
+# URL = "https://valuation2022.durban.gov.za/"
+URL = "https://valuation2017.durban.gov.za/"
 
 def get_driver():
     """
