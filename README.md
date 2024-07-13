@@ -1,4 +1,5 @@
 # VALUATION ROLL GV 2022
+---
 
 ### built with :
 
@@ -12,6 +13,7 @@
 
 
 # Installation
+---
 
 Before we can get started make sure you have [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/) installed
 
@@ -25,6 +27,7 @@ checkout the repository at : [VALUATION-ROLL-GV-2022](https://github.com/JBeggs/
 cd insto the folder and run 
 
 `cd VALUATION-ROLL-GV-2022`
+
 `docker build .`
 
 then
@@ -53,6 +56,7 @@ To create the super user...
 And that's it.
 
 # Urls for application
+---
 
 [Django Admin](http://127.0.0.1:8000/admin/)
 
@@ -62,6 +66,7 @@ And that's it.
 
 
 # Useful docker and docker compose commands
+---
 
 Stop the docker containers
 
@@ -70,22 +75,28 @@ Stop the docker containers
 ### Container names
 
 `valuation-roll-gv-2022-chrome-1`
+
 `valuation-roll-gv-2022-framework-1`
+
 `valuation-roll-gv-2022-cronjobs-1`
+
 `valuation-roll-gv-2022-db-1`
+
 `valuation-roll-gv-2022-web-1`
 
 
+
 # Strategy for webcrawler (NOT WORKING, hopefully by deadline)
+---
 
 I added a cronjob into the system that get's builtt with the application
 
 
-`0 * * * * root python manage.py get_full_title_deeds_town 0 100 > /dev/stdout`
+> 0 * * * * root python manage.py get_full_title_deeds_town 0 100 > /dev/stdout
 
-`20 * * * * root python manage.py get_full_title_suburb 0 100 > /dev/stdout`
+> 20 * * * * root python manage.py get_full_title_suburb 0 100 > /dev/stdout
 
-`40 * * * * root python manage.py sectional_title_scheme 0 100 > /dev/stdout`
+> 40 * * * * root python manage.py sectional_title_scheme 0 100 > /dev/stdout
 
 
 That run every hour for three scripts
@@ -104,3 +115,6 @@ The scripts take two variables:
 With this rate 2400 x 3 (suburbs, deeds towns or schemes) will be collected in the first day
 
 There is a basic que so that if anything happen's nothing happens...
+
+---
+---
