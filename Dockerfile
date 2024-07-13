@@ -14,8 +14,7 @@ COPY crontab.txt /etc/cron.d/crontab
 RUN chmod 0644 /etc/cron.d/crontab
 RUN crontab /etc/cron.d/crontab
 
-ADD crontab.txt /etc/cron.d/crontab
-RUN chmod 0644 /etc/cron.d/crontab
+RUN touch /var/log/cron.log
 RUN chown www-data: /var/log/cron.log
 
 RUN service cron start
