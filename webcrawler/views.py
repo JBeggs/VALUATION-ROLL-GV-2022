@@ -1,20 +1,22 @@
 # views.py
 import django_filters.rest_framework
+
 from rest_framework.mixins import (
     CreateModelMixin, ListModelMixin, RetrieveModelMixin, UpdateModelMixin
 )
 from rest_framework.viewsets import GenericViewSet
+from rest_framework import filters
+from rest_framework.throttling import UserRateThrottle
 
 from .models import ValuationRoll
 from .serializers import ValuationRollSerializer
-from rest_framework import filters
-
 
 class ValuationRollViewSet(GenericViewSet,  # generic view functionality
                      CreateModelMixin,  # handles POSTs
                      RetrieveModelMixin,  # handles GETs for 1 Company
                      UpdateModelMixin,  # handles PUTs and PATCHes
-                     ListModelMixin):  # handles GETs for many Companies
+                     ListModelMixin,
+                     UserRateThrottle):  # handles GETs for many Companies
     """
     Valuation Roll Viewset
     

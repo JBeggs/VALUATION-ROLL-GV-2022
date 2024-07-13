@@ -1,6 +1,11 @@
 # VALUATION ROLL GV 2022
 ---
 
+
+## OpenAPI schema
+
+[Open API Schema](http://127.0.0.1:8000/swagger/?format=openapi)
+
 ### built with :
 
 1. docker
@@ -103,6 +108,21 @@ The scripts take two variables:
 With this rate 2400 x 3 (suburbs, deeds towns or schemes) will be collected in the first day
 
 There is a basic que so that if anything happen's nothing happens...
+
+# Hosting
+---
+
+For hosting and service that can take a container
+
+[AWS](https://aws.amazon.com/free/containers/)
+[Digital Ocean](https://www.digitalocean.com/solutions/docker-hosting)
+or
+[Dockerize](https://dockerize.io/)
+
+# Alerts and errors I would use [Sentry](https://docs.sentry.io/platforms/python/integrations/django/)
+---
+
+You can setup dashboards for anything and every server database reads and write etc
 
 ---
 ---

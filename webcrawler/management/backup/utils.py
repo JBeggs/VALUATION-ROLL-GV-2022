@@ -81,7 +81,6 @@ def save_valuation(valuation_roll):
     Save the data to the database
     
     params: valuation_roll is a dictiionery object with the relevant fields
-    returns: Nothing
     """
     check = ValuationRoll.objects.filter(rate_number=valuation_roll['rate_number'])
     if not check:

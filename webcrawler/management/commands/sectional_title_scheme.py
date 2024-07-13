@@ -64,14 +64,14 @@ def save_scheme(driver, select, waiting_delay, record_limit):
 
                 if len(cols) == 8:
                     valuation_roll = {
-                        "rate_number"        : cols[0].text,
-                        "legal_descriptionn" : cols[1].text,
-                        "address"            : cols[2].text,
+                        "rate_number"        : cols[0].text.strip(),
+                        "legal_descriptionn" : cols[1].text.strip(),
+                        "address"            : cols[2].text.strip(),
                         "scheme"             : scheme,
-                        "first_owner"        : cols[3].text,
-                        "use_code"           : cols[4].text,
-                        "rating_category"    : cols[5].text,
-                        "market_value"       : cols[6].text,
+                        "first_owner"        : cols[3].text.strip(),
+                        "use_code"           : cols[4].text.strip(),
+                        "rating_category"    : cols[5].text.strip(),
+                        "market_value"       : cols[6].text.strip(),
                         "registered_extent"  : cols[7].text.split(","),
                         "roll_type"         : "scheme",
                     }
