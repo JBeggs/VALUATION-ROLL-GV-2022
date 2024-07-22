@@ -28,4 +28,4 @@ RUN pip install -r requirements.txt
 #copy local files
 COPY . . 
 
-CMD ["cron", "-f", "tail -f /var/log/cron.log"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8005"]
